@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>MyPortfolio</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <img src="myphoto.jpeg" class="profile">
+    <h1>Hello, I'm <span>L.Amrutha Reddy</span></h1>
+    <p>AI & Data Science Student | Python Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a first-year Artificial Intelligence and Data Science student with strong problem-solving skills,
+        having solved 250+ problems on LeetCode. I have a solid foundation in Python, Data Structures,
+        and basic web development.
+        <br><br>
+        I am passionate about building real-world projects and continuously improving my skills in software development,
+        databases, and AI.
+    </p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="cards">
+        <div class="card">Python</div>
+        <div class="card">HTML & CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">MySQL</div>
+        <div class="card">DSA</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>AI Resume Analyzer</h3>
+            <p>Analyzes resumes using Python and keyword matching.</p>
+            <a href="https://github.com/yourusername/resume-analyzer" target="_blank" class="btn-small">GitHub</a>
+        </div>
+
+        <div class="card">
+            <h3>LeetCode Tracker</h3>
+            <p>Tracks coding progress using Python and MySQL.</p>
+            <a href="https://github.com/yourusername/leetcode-tracker" target="_blank" class="btn-small">GitHub</a>
+        </div>
+
+        <!-- Highlighted Portfolio Card -->
+        <div class="card highlight">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio using HTML, CSS, JS.</p>
+            <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn-small">GitHub</a>
+            <a href="https://your-live-link.com" target="_blank" class="btn-small">Live</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h4>Contact:+91 9100855224</h4>
+    <h4>Email: lokireddyamrutha7@email.com</h4>
+    <h4>LinkedIn: Amrutha Lokireddy</h4>
+</section>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+</body>
+</html>

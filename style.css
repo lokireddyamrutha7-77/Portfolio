@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: #e0f2fe;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #0284c7;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #e0f2fe, #bae6fd);
+}
+
+.profile {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #0284c7;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #0369a1;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Highlighted Portfolio Card (light black shade) */
+.highlight {
+    background: #e2e8f0;  /* light black/gray */
+}
+
+/* Buttons */
+.btn-small {
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    background: #38bdf8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-small:hover {
+    background: #0284c7;
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
